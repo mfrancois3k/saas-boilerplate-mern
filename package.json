@@ -1,0 +1,50 @@
+{
+  "name": "saas-boilerplate-mern",
+  "version": "1.0.0",
+  "description": "boilerplate for nodejs mongodb express server rest api",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon --exec babel-node src/index",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "clean": "del /f /q /s build && mkdir build",
+    "build-babel": "babel -d ./build ./src -s",
+    "build": "npm run build-babel",
+    "start": "node ./build/index.js"
+  },
+  "author": "Tunç Polat",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime": "^7.12.5",
+    "aws-sdk": "^2.856.0",
+    "bcrypt": "^5.0.0",
+    "concurrently": "^6.2.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "cuid": "^2.1.8",
+    "dotenv": "^8.2.0",
+    "email-validator": "^2.0.4",
+    "express": "^4.17.1",
+    "firebase-admin": "^9.5.0",
+    "ip-regex": "^4.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.5.5",
+    "nodemailer": "^6.4.14",
+    "nodemon": "^2.0.3",
+    "stripe": "^8.137.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.8.7",
+    "@babel/plugin-transform-regenerator": "^7.12.1",
+    "@babel/preset-env": "^7.2.3",
+    "babel-core": "^7.0.0-bridge.0",
+    "faker": "^4.1.0",
+    "regenerator-runtime": "^0.13.1",
+    "rimraf": "^2.6.3"
+  },
+  "engines": {
+    "node": "12.19.0"
+  }
+}

@@ -78,3 +78,8 @@ Tunç Polat
 
 - Stipe Freemium Model (for example like Clockify)
 - Npx create-saas-boilerplate-mern app-name
+
+[website]: https://www.simplweb.ch
+[twitter]: https://twitter.com/TunPolat9
+[instagram]: https://www.instagram.com/simplwebbasel/
+[linkedin]: https://www.linkedin.com/in/tun%C3%A7-polat-b8203a116/
